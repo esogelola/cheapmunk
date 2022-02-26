@@ -36,11 +36,7 @@ const ExampleContainer = () => {
   return (
     <ScrollView
       style={Layout.fill}
-      contentContainerStyle={[
-        Layout.fill,
-        Layout.colCenter,
-        Gutters.smallHPadding,
-      ]}
+      contentContainerStyle={[Layout.colCenter, Gutters.smallHPadding]}
     >
       <View style={[[Layout.colCenter, Gutters.smallHPadding]]}>
         <Brand />

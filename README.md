@@ -38,7 +38,7 @@ Our second microservice is built on Golang. This microservice acts as our databa
 
 ---
 
-![WadleStack](https://i.imgur.com/sfcE9BK.png)
+![CheapmunkStack](https://i.imgur.com/2UL9laY.png)
 
 In only 24 hours, we were tasked with creating a **web application** to **support** individual mental or physical health.
 
