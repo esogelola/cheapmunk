@@ -56,7 +56,7 @@ const SignInContainer = () => {
           </View>
           <TouchableOpacity
             style={[Common.button.rounded, styles.pushDown]}
-            onClick={() => {
+            onPress={() => {
               navigate('SignUp')
             }}
           >
@@ -65,7 +65,7 @@ const SignInContainer = () => {
           <Text style={[Fonts.textCenter, styles.miniText]}>
             Already have an account?{' '}
             <TouchableOpacity
-              onClick={() => {
+              onPress={() => {
                 navigate('SignIn')
               }}
             >

@@ -11,6 +11,7 @@ const slice = createSlice({
     },
     forceSignIn: state => {
       state.user = { username: 'admin' }
+      console.log('forced')
     },
   },
 })

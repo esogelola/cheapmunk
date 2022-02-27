@@ -33,7 +33,7 @@ const HomeContainer = () => {
             </Text>
             <TouchableOpacity
               style={[Common.button.rounded]}
-              onClick={() => {
+              onPress={() => {
                 navigate('SignUp')
               }}
             >
@@ -42,7 +42,7 @@ const HomeContainer = () => {
             <Text style={[Fonts.textCenter, styles.miniText]}>
               Already have an account?{' '}
               <TouchableOpacity
-                onClick={() => {
+                onPress={() => {
                   navigate('SignIn')
                 }}
               >
