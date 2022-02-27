@@ -97,7 +97,7 @@ Through the process of developing Cheapmunk for VTHacks 2022 we learned many ski
 - Not presenting an overwhelming amount of data like other applications
 - Ability to export and share data with family members and accountants (not questionnaire results).
 
-## What's next for Wadle
+## What's next for Cheapmunk
 
 As we further develop Wadle we hope to improve on some **current implementations** and **develop additional features**:
 
