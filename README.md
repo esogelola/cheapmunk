@@ -8,15 +8,15 @@ Managing finances is a tedious and tiresome affair. We developed this personal b
 
 ### GET USED TO BEING LAZY
 
-    Cheapmunk is good at remembering and approximating expenses that are regularly entered. Entering accounts will become a simple tap-and-go process as the software learns your financial patterns.
+> Cheapmunk is good at remembering and approximating expenses that are regularly entered. Entering accounts will become a simple tap-and-go process as the software learns your financial patterns.
 
 ### TAILORED TO YOUR NEEDS
 
-    Cheapmunk allows you to manage your money on your own terms, with rolling budgets that track monthly costs and split temporary budgets that account for what you spent while on vacation.
+> Cheapmunk allows you to manage your money on your own terms, with rolling budgets that track monthly costs and split temporary budgets that account for what you spent while on vacation.
 
 ### ENJOY ACCOUNTING
 
-    Cheapmunk will make you feel rewarded while keeping track of your finances. Game-like prompts, configurable icon packs, and a simple, easy-to-use interface takes the stress out of money management—and even make it fun.
+> Cheapmunk will make you feel rewarded while keeping track of your finances. Game-like prompts, configurable icon packs, and a simple, easy-to-use interface takes the stress out of money management—and even make it fun.
 
 ## How We Built It
 
