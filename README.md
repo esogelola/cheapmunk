@@ -48,7 +48,7 @@ In only 34 hours, we were tasked with creating a **mobile application** to **sup
 
 ## Challenges We Ran Into
 
-When developing Wadle we opted to utilize a more complex backend which included
+When developing Cheapmunk we opted to utilize a more complex backend which included
 
 - Designing a modular frontend with support
 - Second time working as a team at a Hackathon
@@ -99,7 +99,7 @@ Through the process of developing Cheapmunk for VTHacks 2022 we learned many ski
 
 ## What's next for Cheapmunk
 
-As we further develop Wadle we hope to improve on some **current implementations** and **develop additional features**:
+As we further develop Cheapmunk we hope to improve on some **current implementations** and **develop additional features**:
 
 - Web application for Desktop users
 - Identify a growth target and plan
