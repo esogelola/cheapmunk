@@ -12,8 +12,8 @@ import {
 export const navigationRef = createNavigationContainerRef()
 
 export const navigate = (name, params) => {
+  console.log('moving to', name)
   if (navigationRef.isReady()) {
-    console.log('moving to', name)
     navigationRef.navigate(name, params)
   }
 }

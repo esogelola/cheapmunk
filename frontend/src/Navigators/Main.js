@@ -1,40 +1,27 @@
 import React from 'react'
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
-import { CameraContainer, SettingsContainer } from '@/Containers'
+import { createStackNavigator } from '@react-navigation/stack'
+import { MainContainer } from '@/Containers'
 import { MyTabBar } from '@/Components/TabBar'
 
-const Tab = createBottomTabNavigator()
+const Stack = createStackNavigator()
 
 // @refresh reset
 const MainNavigator = () => {
   return (
-    <Tab.Navigator tabBar={props => <MyTabBar {...props} />}>
-      <Tab.Screen
-        name="Settings"
-        component={SettingsContainer}
+    <Stack.Navigator
+      screenOptions={{
+        headerShown: false,
+      }}
+    >
+      <Stack.Screen
+        name="DataPage"
+        component={MainContainer}
         options={{
           tabBarIconStyle: { display: 'none' },
           tabBarLabelPosition: 'beside-icon',
         }}
       />
-
-      <Tab.Screen
-        name="Add transaction"
-        component={SettingsContainer}
-        options={{
-          tabBarIconStyle: { display: 'none' },
-          tabBarLabelPosition: 'beside-icon',
-        }}
-      />
-      <Tab.Screen
-        name="Camera"
-        component={CameraContainer}
-        options={{
-          tabBarIconStyle: { display: 'none' },
-          tabBarLabelPosition: 'beside-icon',
-        }}
-      />
-    </Tab.Navigator>
+    </Stack.Navigator>
   )
 }
 

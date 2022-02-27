@@ -21,77 +21,59 @@ const SignInContainer = () => {
 
   return (
     <View style={[styles.container]}>
-      <ImageBackground
-        source={Images.introImage}
-        resizeMode="cover"
-        style={[styles.image]}
-        blurRadius={4}
-      >
-        <View
-          style={{ flex: 1, flexDirection: 'column', alignItems: 'center' }}
-        >
-          <Brand />
-          <View style={styles.textInputContainer}>
-            <TextInput
-              placeholder="Email"
-              style={styles.textInput}
-              autoCapitalize="none"
-              placeholderTextColor={'white'}
-            />
-          </View>
-          <View style={styles.textInputContainer}>
-            <TextInput
-              placeholder="Password"
-              style={styles.textInput}
-              autoCapitalize="none"
-              placeholderTextColor={'white'}
-            />
-          </View>
-          <TouchableOpacity
-            style={[Common.button.rounded, styles.pushDown]}
-            onClick={() => dispatch({ type: 'forceSignIn' })}
-          >
-            <Text style={[Fonts.buttonText, styles.button]}>Log In</Text>
-          </TouchableOpacity>
-          <Text style={[Fonts.textCenter, styles.miniText]}>
-            Don't have an account?{' '}
-            <TouchableOpacity
-              onClick={() => {
-                navigate('SignUp')
-              }}
-            >
-              <Text style={[styles.buttonText]}>Register!</Text>
-            </TouchableOpacity>
-          </Text>
+      <View style={{ flex: 1, flexDirection: 'column', alignItems: 'center' }}>
+        <Brand />
+        <Text style={[styles.textWhite, styles.textCenter]}>
+          Sign up now to make your budgeting easier!
+        </Text>
+        <View style={styles.textInputContainer}>
+          <TextInput
+            placeholder="Email"
+            style={styles.textInput}
+            autoCapitalize="none"
+            placeholderTextColor={'white'}
+          />
         </View>
-      </ImageBackground>
+        <View style={styles.textInputContainer}>
+          <TextInput
+            placeholder="Password"
+            style={styles.textInput}
+            autoCapitalize="none"
+            placeholderTextColor={'white'}
+          />
+        </View>
+        <TouchableOpacity
+          style={[Common.button.rounded, styles.pushDown]}
+          onPress={() => {
+            dispatch({ type: 'forceSignIn' })
+          }}
+        >
+          <Text style={[Fonts.buttonText, styles.button]}>Log In</Text>
+        </TouchableOpacity>
+        <Text style={[Fonts.textCenter, styles.miniText]}>
+          Don't have an account?{' '}
+          <TouchableOpacity
+            onPress={() => {
+              navigate('SignUp')
+            }}
+          >
+            <Text style={[styles.buttonText]}>Register!</Text>
+          </TouchableOpacity>
+        </Text>
+      </View>
     </View>
   )
 }
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-  },
-  image: {
-    flex: 1,
+    backgroundColor: '#D59F5D',
     justifyContent: 'center',
 
     flexDirection: 'row',
     alignItems: 'center',
-
-    tintColor: 'black',
   },
-  glass: {
-    width: '100%',
-    height: '100%',
-    flex: 1,
-    justifyContent: 'center',
 
-    flexDirection: 'row',
-    alignItems: 'center',
-    backgroundColor: '#000000',
-    opacity: 0.4,
-  },
   textWhite: {
     color: 'white',
     opacity: 1,
@@ -117,6 +99,9 @@ const styles = StyleSheet.create({
   miniText: {
     color: 'white',
     marginVertical: 10,
+  },
+  textCenter: {
+    textAlign: 'center',
   },
 })
 

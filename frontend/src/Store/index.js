@@ -19,6 +19,7 @@ import theme from './Theme'
 
 import user from './User'
 const reducers = combineReducers({
+  user,
   theme,
   ...Object.values(modules).reduce(
     (acc, module) => ({
@@ -32,7 +33,7 @@ const reducers = combineReducers({
 const persistConfig = {
   key: 'root',
   storage: AsyncStorage,
-  whitelist: ['theme'],
+  whitelist: ['theme', 'user'],
 }
 
 const persistedReducer = persistReducer(persistConfig, reducers)
