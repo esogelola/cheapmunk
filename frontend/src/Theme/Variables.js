@@ -17,6 +17,8 @@ export const Colors = {
   primary: '#E14032',
   success: '#28a745',
   error: '#dc3545',
+  background: '#D59F5D',
+  buttonBackground: '#070F2F',
 }
 
 export const NavigationColors = {
@@ -30,6 +32,7 @@ export const FontSize = {
   small: 16,
   regular: 20,
   large: 40,
+  extraLarge: 75,
 }
 
 /**

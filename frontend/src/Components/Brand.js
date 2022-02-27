@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { View, Image } from 'react-native'
+import { View, Image, StyleSheet } from 'react-native'
 import { useTheme } from '@/Hooks'
 
 const Brand = ({ height, width, mode }) => {
@@ -8,7 +8,13 @@ const Brand = ({ height, width, mode }) => {
 
   return (
     <View style={{ height, width }}>
-      <Image style={Layout.fullSize} source={Images.logo} resizeMode={mode} />
+      <View style={styles.circle}>
+        <Image
+          style={[Layout.fullSize]}
+          source={Images.logo}
+          resizeMode={mode}
+        />
+      </View>
     </View>
   )
 }
@@ -24,5 +30,16 @@ Brand.defaultProps = {
   mode: 'contain',
   width: 200,
 }
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#D59F5D',
+  },
+  circle: {
+    backgroundColor: '#EED29D',
+    padding: 30,
+    borderRadius: 100,
+  },
+})
 
 export default Brand
