@@ -17,6 +17,7 @@ import { api } from '@/Services/api'
 import * as modules from '@/Services/modules'
 import theme from './Theme'
 
+import user from './User'
 const reducers = combineReducers({
   theme,
   ...Object.values(modules).reduce(

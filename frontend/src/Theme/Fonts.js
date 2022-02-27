@@ -2,7 +2,7 @@
  * This file contains all application's style relative to fonts
  */
 import { StyleSheet } from 'react-native'
-
+import { normalize } from '@/utils/normalize'
 /**
  *
  * @param Theme can be spread like {Colors, NavigationColors, Gutters, Layout, Common, ...args}
@@ -10,6 +10,24 @@ import { StyleSheet } from 'react-native'
  */
 export default function ({ FontSize, Colors }) {
   return StyleSheet.create({
+    brandName: {
+      fontFamily: 'Cabin',
+      fontWeight: 'bold',
+      color: 'rgb(255, 255, 255)',
+      fontSize: normalize(50),
+      textShadowColor: 'rgba(0, 0, 0, 0.25)',
+      textShadowOffset: { width: 0, height: 4 },
+      textShadowRadius: 4,
+    },
+    buttonText: {
+      fontSize: FontSize.regular,
+      color: 'white',
+    },
+    welcomeTo: {
+      fontFamily: 'Create Round',
+      color: 'white',
+      fontSize: normalize(24),
+    },
     textSmall: {
       fontSize: FontSize.small,
       color: Colors.text,

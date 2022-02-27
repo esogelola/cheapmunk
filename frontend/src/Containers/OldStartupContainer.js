@@ -1,15 +1,13 @@
 import React, { useEffect } from 'react'
-import { ActivityIndicator, View, Text, StyleSheet } from 'react-native'
+import { ActivityIndicator, View, Text } from 'react-native'
 import { useTranslation } from 'react-i18next'
 import { useTheme } from '@/Hooks'
 import { Brand } from '@/Components'
 import { setDefaultTheme } from '@/Store/Theme'
 import { navigateAndSimpleReset } from '@/Navigators/utils'
-import { useSelector } from 'react-redux'
 
 const StartupContainer = () => {
-  const { Layout, Gutters, Fonts, Colors } = useTheme()
-  const isSignedIn = useSelector(state => state.user)
+  const { Layout, Gutters, Fonts } = useTheme()
 
   const { t } = useTranslation()
 
@@ -23,15 +21,7 @@ const StartupContainer = () => {
 
     // Here you can add asynchronous/synchronous tasks
 
-    // Check if user is loggedin
-    if (isSignedIn) {
-      navigateAndSimpleReset('Main')
-    } else {
-      navigateAndSimpleReset('Home')
-    }
-    // If logged in we push em to main
-
-    // Push them to signup page
+    navigateAndSimpleReset('Main')
   }
 
   useEffect(() => {
@@ -39,18 +29,12 @@ const StartupContainer = () => {
   })
 
   return (
-    <View style={[Layout.fill, Layout.colCenter, styles.container]}>
+    <View style={[Layout.fill, Layout.colCenter]}>
       <Brand />
-
-      <Text style={[Fonts.textCenter, Fonts.brandName]}>Cheapmunk</Text>
       <ActivityIndicator size={'large'} style={[Gutters.largeVMargin]} />
+      <Text style={Fonts.textCenter}>{t('welcome')}</Text>
     </View>
   )
 }
 
 export default StartupContainer
-const styles = StyleSheet.create({
-  container: {
-    backgroundColor: '#D59F5D',
-  },
-})

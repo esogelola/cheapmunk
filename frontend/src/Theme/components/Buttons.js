@@ -5,7 +5,8 @@ export default function ({ Colors, Gutters, Layout }) {
     ...Layout.center,
     ...Gutters.largeHPadding,
     height: 40,
-    backgroundColor: Colors.primary,
+    backgroundColor: Colors.buttonBackground,
+    color: Colors.white,
   }
   const rounded = {
     ...base,

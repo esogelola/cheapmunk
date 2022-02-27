@@ -13,6 +13,7 @@ export const navigationRef = createNavigationContainerRef()
 
 export const navigate = (name, params) => {
   if (navigationRef.isReady()) {
+    console.log('moving to', name)
     navigationRef.navigate(name, params)
   }
 }
