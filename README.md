@@ -34,15 +34,15 @@ The API Gateway is built on Python with Flask conducting the routing. Our API Ga
 
 ---
 
-![CheapmunkStack](https://i.imgur.com/2UL9laY.png)
+![CheapmunkStack](https://i.imgur.com/KFzvsNO.gif)
 
 In only 34 hours, we were tasked with creating a **mobile application** to **support** help young adults budget their money.
 
 | Stack         | Technology Used                            |
 | ------------- | ------------------------------------------ |
 | Front-End     | React Native, Figma, Javascript,Redux, CSS |
-| Back-End      | Google Firebase, Flask, Python             |
-| Cloud/Hosting | OAuth, Google Cloud, Google NLP, Heroku    |
+| Back-End      | Flask, Python                              |
+| Cloud/Hosting | Heroku                                     |
 | Database      | MongoDB                                    |
 | Querying      | MongoEngine                                |
 
